@@ -147,7 +147,7 @@ class LightBoxContainer extends Component {
                         <Masonry columnsCount={6} gutter="6px" className="gallery pb-2">
                             {this.state.images.map((item ,index)=>{
                                             return (
-                                                    <img key={index} alt='' src={this.fetchThumbnailImage(item)} name={item.index} id={item.id} onClick={(event ,url)=>this.openLightBox(event,item.webContentLink)} className='thumbnail-image'/>
+                                                    <img key={index} alt='' referrerPolicy="no-referrer" src={this.fetchThumbnailImage(item)} name={item.index} id={item.id} onClick={(event ,url)=>this.openLightBox(event,item.webContentLink)} className='thumbnail-image'/>
                                             )
                                         })}
                         </Masonry>
