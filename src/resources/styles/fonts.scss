@@ -1,0 +1,99 @@
+.RobotoRegular {
+    font-family: "Roboto";
+  }
+  
+.SourceSerifRegular {
+    font-family: "SourceSerifPro-Regular";
+}
+
+.SourceSerifBold {
+    font-family: "SourceSerifPro-Bold";
+}
+
+.RobotoMedium{
+    font-family: "Roboto-Medium";
+}
+
+.RobotoBold{
+    font-family: "Roboto-Bold";
+}
+
+.PoppinsLight{
+    font-family: "Poppins-Light";
+}
+
+.PoppinsBold{
+    font-family: "Poppins-Bold";
+}
+.PoppinsMedium{
+    font-family: "Poppins-Medium";
+}
+
+.PoppinsRegular{
+    font-family: "Poppins-Regular";
+}
+.PoppinsSemiBold{
+    font-family: "Poppins-SemiBold";
+}
+
+.RobotoRegular14px{
+    font-size: 14px;
+    @extend .RobotoRegular;
+}
+
+.RobotoRegular16px{
+    font-size: 16px;
+    @extend .RobotoRegular;
+}
+.RobotoRegular18px{
+    font-size: 18px;
+    @extend .RobotoRegular;
+}
+.RobotoRegular20px{
+    font-size: 20px;
+    @extend .RobotoRegular;
+}
+.RobotoRegular22px{
+    font-size: 22px;
+    @extend .RobotoRegular;
+}
+
+.RobotoRegular26px{
+    font-size: 26px;
+    @extend .RobotoRegular;
+}
+
+
+.RobotoMedium72px{
+    font-size: 72px;
+    @extend .RobotoMedium;
+}
+
+.RobotoBold18px{
+    font-size: 18px;
+    @extend .RobotoBold
+}
+
+.PoppinsBold30px{
+    font-size: 30px;
+    @extend .PoppinsBold;
+}
+
+.PoppinsMedium14px{
+    font-size: 14px;
+    @extend .PoppinsMedium;
+}
+
+.PoppinsMedium16px{
+    font-size: 16px;
+    @extend .PoppinsMedium;
+}
+.PoppinsMedium24px{
+    font-size: 24px;
+    @extend .PoppinsMedium;
+}
+
+.PoppinsRegular14px{
+    font-size: 14px;
+    @extend .PoppinsRegular;
+}

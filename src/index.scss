@@ -1,0 +1,111 @@
+@import "../src/resources/styles/fonts.scss";
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./resources/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./resources/fonts/Poppins-Regular.otf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("./resources/fonts/Poppins-Medium.otf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("./resources/fonts/Poppins-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./resources/fonts/Poppins-Bold.otf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./resources/fonts/Poppins-Light.otf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("./resources/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("./resources/fonts/Roboto-Medium.ttf");
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.join-button{
+  background-color: #FFC700;
+  border-radius: 23px;
+  color: #010101;
+  @extend .RobotoBold18px;
+  border-color: #FFC700;
+}
+
+.btn-primary:focus ,.btn-primary:hover{
+  background-color: #FFC700;
+  color: #010101;
+  border-color:#FFC700 ;
+  outline: none;
+}
+
+button:focus{
+  outline: none;
+}
+
+.back-next-button{
+  background:none;
+  border: none;
+  padding: 0 5px;   
+}
+.back-next-button.btn:disabled{
+   opacity: 40%;
+}
+
+.back-next-button.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle ,
+.back-next-button.btn-primary.focus, .back-next-button.btn-primary:focus{
+   background:none;
+   border: none;
+   box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus{
+  box-shadow: none;
+}
+.btn-primary.disabled, .btn-primary:disabled{
+  background: none;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

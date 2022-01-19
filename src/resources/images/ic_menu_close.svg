@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="ic_menu_close" transform="translate(0 0.333)">
+    <rect id="Rectangle" width="26" height="26" transform="translate(0 -0.333)" fill="#fff" opacity="0"/>
+    <g id="Group" transform="translate(0.667 6)">
+      <path id="Rectangle-2" data-name="Rectangle" d="M0,0H24.333V1.667H0Z" transform="translate(3.333 14.873) rotate(-45)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Rectangle-Copy" d="M0,6H24.333V7.667H0Z" transform="translate(8.396 -6.602) rotate(45)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

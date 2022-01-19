@@ -1,0 +1,51 @@
+@import "../../resources/styles/fonts.scss";
+      
+ .contact-us-container{
+    background-color: black;
+    color: white;
+
+    .title{
+        @extend .PoppinsMedium;
+        font-size: 16px;
+    }
+
+    .sub-content{
+        color: white;
+        opacity: 68%;
+        padding-top: 10px;
+        @extend .PoppinsRegular;
+        font-size: 14px;
+    }
+    a.sub-content{
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .org-name{
+        @extend .PoppinsMedium16px;
+    }
+
+    .plus-sign{
+        @extend .PoppinsMedium24px;
+        opacity: 68%;
+    }
+    .footer{
+        color: #878992;
+        @extend .RobotoRegular14px;
+    }
+    .horizontal-line{
+        border-bottom: 1px solid;
+    }
+   
+    #ic_instagram:hover g {
+        stroke: #5280F4 ;
+    }
+    #ic_instagram:hover #Group_427 > path{
+        fill: #5280F4;
+    }
+    #ic_facebook:hover g path {
+        fill: #5280F4;
+    }
+    #ic_youtube:hover path{
+        fill: #5280F4;
+    }
+}       

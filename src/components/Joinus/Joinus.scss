@@ -1,0 +1,152 @@
+@import "../../resources/styles/fonts.scss";
+
+.joinus-container {
+    background-image: url("../../resources/images/joinus.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+
+    .joinus-wrapper{
+       padding: 30px 0px;
+    }
+
+    .join-us-selector{
+        background-color: #ffffff;
+        .title{
+            @extend .PoppinsBold;
+            font-size: 1.7vw;
+            color: #2C303F;
+        }
+        .sub-title{
+            @extend .PoppinsMedium14px;
+            color: #2C303F;
+            opacity: 60%;
+        }
+
+        .tooltip-text{
+            @extend .PoppinsLight;
+            font-size: 11px;
+            text-align: left;
+            padding: 0px 30px 10px 30px;
+            color: #2C303F;
+        }
+    }
+
+    .form{
+        background-color: #ECEDF2;
+
+        .form-control{
+            @extend .PoppinsRegular14px;
+            border-radius: 21px;
+            color: #2C303F;
+        }
+        .textarea{
+            border-radius: 21px;
+        }
+    }
+
+    .selected-button{
+        border-radius: 37px;
+        @extend .PoppinsMedium;
+        font-size: 1vw;
+        color: #5280F4;
+        border: 1px solid #5280F4;
+        background: white;
+        text-transform: capitalize;
+        width: 100%;
+        padding: 0.3rem 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .select-text{
+        font-size: 16px;
+    }
+
+    .spinner-border{
+        position: absolute;
+        top: 50%;
+        left: 48%;
+    }
+
+    .select-button input {
+        display: none;
+    }
+
+    .select-button input:checked + .selected-button {
+        background-color: #5280F4 !important;
+        color: white;
+
+        //Svg styles
+        #awarness path , #wall-art path ,#ic_phone_support path ,
+        #fundraising path ,#ic_tree_plantation path ,#watering-plants path,
+        #photography path, #newsletter path ,#cleaning_river path 
+        {
+            fill: white;
+            border-color: white;
+        }
+        #ic_video path ,#ic_video g {
+            stroke: white;
+        }
+    }
+
+    
+    
+    .info-icon{
+        position: absolute;
+        right: 11%;
+    }
+
+    //Toast
+    .Toastify__toast-body{
+        text-align: left;
+    }
+
+    .Toastify__toast-theme--light {
+        background: #83BE48;
+        color: white;
+        @extend .RobotoRegular;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .Toastify__close-button--light{
+        color: white;
+        opacity: 1;
+    }
+}
+
+:root{
+    --toastify-icon-color-success:#fff
+}
+
+@media screen and (max-width:1200px) {
+    .joinus-wrapper{
+        left: 3% !important;
+    }
+}
+
+
+//Tooltip
+#custom-popover::before {
+    content: '';
+    position: absolute;
+    display: block;    
+    width: 0px;        
+    left: 30%;
+    top: 5px;
+    border: 5px solid transparent;
+    border-top: 0;
+    border-bottom: 5px solid #5280F4;
+    transform: translate(-50%, calc(-100% - 5px));
+}
+
+#custom-popover{
+    margin-top: -0.5rem;
+    border: 1px solid #E3E3E3;
+    width: 100%;
+}

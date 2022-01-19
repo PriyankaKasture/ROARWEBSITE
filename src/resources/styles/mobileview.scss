@@ -1,0 +1,189 @@
+@import "./fonts.scss";
+
+@media screen and (max-width:1024px) {
+    //Projects
+    .projects-container{
+        .nav-tabs{
+            .nav-item{
+                font-size: 14px;
+                margin-right: 18px;
+            }
+        }
+
+     #projects-slider-tabpane-ongoing , #projects-slider-tabpane-upcoming{
+         .text-container{
+                 padding: 20px;
+                 .title{
+                     font-size: 21px;
+                 }
+                 .sub-content p{
+                     font-size: 12px;
+                     line-height: 18px;
+                 }
+                 .extended-content{
+                     max-height: 240px !important;
+                     font-size: 12px;
+                     line-height: 18px;
+                 }
+             }
+             .image-text-container{
+                     display: block !important;
+             }
+             .slide-count{
+                 font-size: 16px;
+              }
+ 
+              .count-arrow-box{
+                  display: none;
+              }
+              
+              .mobile-count-arrow-box{
+                  display: flex;
+                  justify-content: space-between;
+              }
+             
+         }
+    }
+
+    //Gallery
+    .gallery-container{
+        padding-top: 10%;
+        .title{
+            font-size: 18px !important;
+        }
+        .slide-count{
+           font-size: 16px !important;
+        }
+        .count-box{
+          display: none;
+        }
+        .mobile-count-box{
+            display: flex;
+            justify-content: space-between;
+        }
+        .view-more{
+            font-size: 14px !important;
+        }
+    }
+
+    // Contact Us
+    .contact-us-container{
+        .mobile-padding{
+            padding-top: 20px;
+        }
+    }
+
+    //About US
+    .about-us-container{
+        .title{
+            font-size: 18px;
+        }
+        .content{
+            font-size: 12px;
+        }
+    }
+
+    //Joinus
+    .joinus-container{
+            .join-us-selector{
+                    .title{
+                        font-size: 18px !important;
+                    }
+                    .label-content{
+                        font-size: 10px;
+                    }
+                }
+                
+                .joinus-wrapper{
+                    padding: 10px;
+                }
+    }
+
+    //Sidebar
+    //Mobile Sidebar
+    .sidebar-container{
+        .bm-burger-button {
+            position: fixed;
+            width: 30px;
+            height: 20px;
+            left: 16px;
+            top: 16px;
+          } 
+          .bm-burger-bars {
+                background: white;
+            }
+        .bm-menu-wrap{
+            width: 100% !important;
+        }
+        .bm-cross{
+            width: 18px;
+            height: 18px;
+        }
+        .bm-cross-button{
+            right: 40px !important;
+        }
+        
+        /* Wrapper for item list */
+        .bm-item-list {
+            padding-top: 40px;
+            background-color:black;
+
+            .nav-link{
+                color: white;
+                border-bottom: 2px solid #707070;
+                margin: 10px 30px;
+            }
+            
+            .nav-link.active{
+                border-bottom: 3px solid #FFC700;
+                color: white;
+            }
+
+            .join-link{
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                background-color: #FFC700;
+                border-radius: 24px;
+                color: black !important;
+                font-size: 16px;
+                margin-top:15px;  
+                padding: 10px 0px;
+        
+                .active{
+                    border-bottom: none;
+                }
+            }
+            
+        }
+
+        #language-selector{
+            color: white;
+        }
+    }
+ }
+
+ @media screen and (max-width:1200px) {
+    #custom-popover{
+        display: none;
+    }
+
+    #projects-slider-tabpane-ongoing , #projects-slider-tabpane-upcoming{
+        .text-container{
+            .extended-content{
+                max-height: 350px !important;
+            }
+        }
+    }
+    .gallery-modal{
+        .modal-dialog{
+          max-width: 96% !important;
+        }
+        .modal-image{
+          height: auto !important;
+        }
+    }
+ }
+
+
+

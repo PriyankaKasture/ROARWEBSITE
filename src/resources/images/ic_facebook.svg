@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+  <g id="ic_facebook" opacity="0.68">
+    <rect id="Rectangle" width="41" height="41" fill="#fff" opacity="0"/>
+    <g id="facebook-logo-in-circular-button-outlined-social-symbol" transform="translate(3.968 3.968)">
+      <path id="Shape" d="M33.065,16.532A16.532,16.532,0,1,0,16.532,33.065,16.533,16.533,0,0,0,33.065,16.532Zm-31.562,0A15.029,15.029,0,1,1,16.532,31.562,15.029,15.029,0,0,1,1.5,16.532Z" fill="#fff"/>
+      <path id="Path" d="M23.36,29.668V20.126h3.149l.5-3.162H23.36V15.378c0-.825.271-1.613,1.455-1.613h2.367V10.609H23.822c-2.826,0-3.6,1.861-3.6,4.44v1.913H18.286v3.164h1.939v9.542Z" transform="translate(-6.194 -3.593)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

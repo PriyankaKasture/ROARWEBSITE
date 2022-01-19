@@ -1,0 +1,81 @@
+@import "../../../resources/styles/fonts.scss";
+
+
+.light-box-container{
+    background: black;
+    .gallery {
+      width: auto !important;
+      margin: 0 10px;
+      .thumbnail-image {
+        max-width: 100%;
+        // width: 60%;
+        cursor: pointer;
+        transition: all 1.5s ease;
+      }
+    }
+    
+    .spinner-border{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    .logo-wrapper{
+      background-image: url('../../../resources/images/banner.jpg');
+    }
+}
+
+
+//Modal Styles
+
+.gallery-modal{
+  background: black;
+
+  .modal-dialog{
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88%;
+  }
+  .modal-content{
+    background: transparent;
+    border: none;
+  }
+  .modal-image{
+    height: 85vh;
+  }
+
+  //Close button
+  .close{
+    opacity: 1;
+  }
+  .close:hover{
+    opacity: 1 !important;
+  }
+
+
+  //Carousel
+  .carousel-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .carousel-button{
+      position: absolute;
+      padding: 0;
+      text-decoration: none;
+    }
+
+    .carousel-button:focus{
+      box-shadow: none !important;
+    }
+    
+    .prev{
+        left:0
+    }
+    .next{
+      right: 0;
+    }
+  }
+}

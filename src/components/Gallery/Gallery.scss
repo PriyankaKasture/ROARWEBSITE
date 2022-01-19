@@ -1,0 +1,69 @@
+@import "../../resources/styles/fonts.scss";
+
+.gallery-container {
+    background-color: black;
+    color: white;
+    text-align: left;
+    margin-top: -10px;
+
+    .title{
+        @extend .PoppinsBold;
+        font-size: 1.7vw;
+        color: white;
+    }
+
+        .count-arrow-box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .count-box{
+            display: flex;
+            align-items: center;
+        }
+
+        .mobile-count-box{
+            display: none;
+        }
+        .slick-dots li{
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                margin-right: 7px;
+                background: black;
+                border: 2px solid #FFFFFF;
+                opacity: 0.52;
+        }
+        .slick-dots .slick-active{
+            background:white;
+            opacity: 1;
+        }
+        .slick-dots li button:before{
+            font-size: 0px;
+        }
+
+       .gallery-button{
+           padding: 0 5px;   
+           text-decoration: none;
+       }
+       .gallery-button.btn:disabled{
+            opacity: 40%;
+        }
+
+       .gallery-button:focus{
+            box-shadow: none;
+       }
+       .slide-count{
+           @extend .PoppinsSemiBold;
+           font-size: 1.3vw;
+       }
+
+       .view-more{
+           @extend .PoppinsSemiBold;
+           font-size:20px;
+           color: #FFC700;
+           text-decoration: none;
+           padding: 0 10px;
+       }
+}

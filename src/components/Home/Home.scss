@@ -1,0 +1,10 @@
+@import "../../resources/styles/fonts.scss";
+
+
+@media (min-width: 1200px){
+    .home-wrapper {
+        .container{
+            max-width: 1040px;
+        }
+    }
+}

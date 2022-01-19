@@ -1,0 +1,119 @@
+@import "../../resources/styles/fonts.scss";
+
+.projects-container {
+    background-color: black;
+    color: white;
+    text-align: left;
+    margin-top: -10px;
+
+    .nav-tabs{
+        border-bottom: 0px;
+
+        .nav-item{
+            margin-right: 25px;
+            @extend .PoppinsBold;
+            font-size: 1.5vw;
+        }
+        .nav-link{
+            color: white;
+            opacity: 35%;
+            border: none;
+            background-color: black;
+            border-radius: 0;
+            padding-left: 0px;
+        }
+        .nav-link.active{
+            border-bottom: 2px solid #ffac39;
+            color: white;
+            opacity: 1 !important;
+            
+        }
+    }
+
+    #projects-slider-tabpane-ongoing , #projects-slider-tabpane-upcoming{
+        position: relative;
+        .count-arrow-box{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: absolute;
+            right: 0;
+            top: -11%;
+        }
+        
+        .mobile-count-arrow-box{
+            display: none;
+        }
+
+       .slide-count{
+           @extend .PoppinsSemiBold;
+           font-size: 1.3vw;
+       }
+       .image-text-container{
+           display: flex !important;
+        }
+
+    //Text Container
+    .text-container{
+        background: #5280F4;
+        padding: 20px 10px 0px 20px;
+
+        .title{
+            width: 100%;
+             @extend .PoppinsBold;
+             font-size: 2vw;
+        }
+
+        .extended-content{
+            max-height: 400px;
+            overflow-y: auto;
+            @extend .PoppinsMedium;
+            font-size: 1.2vw;
+            opacity: 60%;
+        }
+    }
+    
+    .btn-primary.disabled, .btn-primary:disabled ,.btn-primary:hover{
+        background: none;
+        border: none;
+    }
+
+       //Slider styles
+       .slick-slider{
+        //    width: 50%;
+       }
+       .slick-next, .slick-prev{
+           top: unset;
+           bottom: 0px;
+           z-index: 1;
+       }
+       .slick-prev{
+           left: 15px;
+       }
+       .slick-next{
+           right: 15px;
+       }
+       .slick-dots{
+           bottom: 0px;
+           background: black;
+           opacity: 42%;
+       }
+       .slick-dots li{
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            margin: 10px 5px;
+            background: black;
+            border: 2px solid #FFFFFF;
+            opacity: 0.52;
+        }
+        .slick-dots .slick-active{
+            background:white;
+            opacity: 1;
+        }
+        .slick-dots li button:before{
+            font-size: 0px;
+        }
+    }
+}
+

@@ -1,0 +1,7 @@
+<svg id="Group_90" data-name="Group 90" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="Ellipse_1" data-name="Ellipse 1" fill="none" stroke="#ffc700" stroke-width="3">
+    <circle cx="17" cy="17" r="17" stroke="none"/>
+    <circle cx="17" cy="17" r="15.5" fill="none"/>
+  </g>
+  <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M8.232,3.582l-.71-.71a.764.764,0,0,0-1.084,0L.225,9.083a.764.764,0,0,0,0,1.084L6.439,16.38a.764.764,0,0,0,1.084,0l.71-.71a.768.768,0,0,0-.013-1.1L4.368,10.9h9.186a.765.765,0,0,0,.767-.767V9.115a.765.765,0,0,0-.767-.767H4.368L8.219,4.678A.762.762,0,0,0,8.232,3.582Z" transform="translate(9.84 7.374)" fill="#ffc700"/>
+</svg>

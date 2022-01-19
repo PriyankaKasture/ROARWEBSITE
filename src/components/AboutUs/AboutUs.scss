@@ -1,0 +1,37 @@
+@import "../../resources/styles/fonts.scss";
+
+.about-us-container {
+    background-color: black;
+    color: white;
+    text-align: left;
+
+     .about-wrapper-image{
+        background: url("../../resources/images/splash.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .title{
+        @extend .PoppinsBold;
+        font-size: 1.7vw;
+        color: white;
+    }
+    .content{
+        @extend .PoppinsMedium;
+        font-size: 1.3vw;
+        opacity: 68%;
+    }
+    
+    .join-button{
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
