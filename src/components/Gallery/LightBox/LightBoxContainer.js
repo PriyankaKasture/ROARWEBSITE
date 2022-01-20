@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import axios  from 'axios';
 import {Row } from "react-bootstrap";
-
 import Masonry , {ResponsiveMasonry} from "react-responsive-masonry";
 
 
 import LightBox from '../LightBox/LightBox';
 import logo from "../../../resources/images/logo.png";
+
+
+import {API} from "../../../axios/APIConstants";
 
 
 import "./LightBox.scss";
@@ -27,19 +29,18 @@ class LightBoxContainer extends Component {
     }
 
     componentDidMount(){
-        let folderId='"1ELJbcUmtywEiT1VWm0nAbp8F43n77-ra"';
-        let q = folderId + ' in parents ';
+        let q = API.GOOGLEDRIVEFOLDERID + ' in parents ';
         let self=this;
-
+        
         this.setState({
             showSpinner:true,
         })
   
-          axios.get('https://www.googleapis.com/drive/v3/files?' ,
+          axios.get(API.GOOGLEFILEAPI ,
             { 
                 params: { 
                 q:q,
-                key:'AIzaSyCmlI4T5d6bLXimDyAZT59I-tMPdqUHfjg',
+                key:API.GOOGLEAPIKEY,
                 fields: "files(id, kind, name, mimeType, thumbnailLink,webContentLink)",
             } 
         })
@@ -65,7 +66,6 @@ class LightBoxContainer extends Component {
         });
 
         let orginalImages=[];
-        let ImageUrl='https://drive.google.com/uc?export=view&id=';
            for(var i =0 ; i < sortedData.length; i++)
            {
             let currentIndex=i+1;
@@ -75,7 +75,7 @@ class LightBoxContainer extends Component {
                 kind:response[i].kind ,
                 name:response[i].name,
                 mimeType:response[i].mimeType ,
-                webContentLink:ImageUrl + response[i].id,
+                webContentLink:API.GOOGLEIMAGEAPI + response[i].id,
             })
            }
             console.log("images",orginalImages);
@@ -88,7 +88,7 @@ class LightBoxContainer extends Component {
 
       fetchThumbnailImage=(item)=>{
         let imageId=item.id;
-        let src='https://drive.google.com/thumbnail?id='+ imageId
+        let src=API.GOOGLETHUMBNAILAPI+ imageId
         return src;
       }
 
