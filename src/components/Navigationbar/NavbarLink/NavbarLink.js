@@ -20,11 +20,13 @@ class NavbarLink extends Component {
                           <Nav.Link onClick={this.props.navigateToSection} href="#gallery">
                                     Gallery
                           </Nav.Link>
-                          <Nav.Link onClick={this.props.navigateToSection} href="#contact"> 
-                                    Contact Us
-                          </Nav.Link>
-                          <Nav.Link onClick={this.props.navigateToSection} href="#joinus" className="join-link">
+                         
+                          <Nav.Link onClick={this.props.navigateToSection} href="#joinus" className="order-xl-6 join-link">
                                   Join the Cause
+                          </Nav.Link>
+
+                          <Nav.Link className='order-xl-5'  onClick={this.props.navigateToSection} href="#contact"> 
+                                    Contact Us
                           </Nav.Link>
             </div>
         );

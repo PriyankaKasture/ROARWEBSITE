@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { slide as Menu } from "react-burger-menu";
-import { Nav } from "react-bootstrap";
 
 
-// import NavbarLink from "../NavbarLink/NavbarLink";
+import NavbarLink from "../NavbarLink/NavbarLink";
 
 
 import {scrollToDiv} from "../../../utils/utility";
@@ -11,6 +10,8 @@ import mobileLogo from "../../../resources/images/mobileLogo.jpg";
 
 // import ic_menu from "../../../resources/images/ic_menu.svg";
 import ic_menu_close from "../../../resources/images/ic_menu_close.svg";
+
+import './MobileViewSidebar.scss';
 
 class MobileViewSidebar extends Component {
     constructor(props){
@@ -49,37 +50,8 @@ class MobileViewSidebar extends Component {
                         onClose={this.handleClose}
                         // customBurgerIcon={ <img src={ic_menu}  alt='open'/> }
                         customCrossIcon={ <img src={ic_menu_close} alt='close' /> }>
-                        <div className='nav-link-wrapper'>
-                            <Nav.Link onClick={this.handleClose} href="#home">
-                                    Home
-                            </Nav.Link>
-                        </div>
-                        <div className='nav-link-wrapper'>
-                          <Nav.Link onClick={this.handleClose} href="#about">
-                                About Us
-                          </Nav.Link>
-                        </div>
-                        <div className='nav-link-wrapper'>
-                          <Nav.Link onClick={this.handleClose} href="#projects">
-                                Projects
-                          </Nav.Link>
-                        </div>
-                        <div className='nav-link-wrapper'>
-                          <Nav.Link onClick={this.handleClose} href="#gallery">
-                                Gallery
-                          </Nav.Link>
-                        </div>
-                        <div className='nav-link-wrapper'>
-                          <Nav.Link onClick={this.handleClose} href="#joinus" className="join-link">
-                                Join the Cause
-                          </Nav.Link>
-                        </div>
                         
-                        <div className='nav-link-wrapper'>
-                          <Nav.Link onClick={this.handleClose} href="#contact">
-                                Contact Us
-                          </Nav.Link>
-                        </div>
+                        <NavbarLink navigateToSection={this.handleClose} />
                     </Menu>
                     <div className='pt-2'>
                          <img src={mobileLogo} alt="Logo" className="d-lg-none mobile-logo img-fluid" />

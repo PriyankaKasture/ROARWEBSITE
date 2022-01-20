@@ -1,2 +1,60 @@
 @import "../../../resources/styles/fonts.scss";
 
+    //Mobile Sidebar
+    .sidebar-container{
+        .bm-burger-button {
+            position: fixed;
+            width: 30px;
+            height: 20px;
+            left: 16px;
+            top: 16px;
+          } 
+        .bm-burger-bars {
+                background: white;
+        }
+        .bm-menu-wrap{
+            width: 100% !important;
+        }
+        .bm-cross{
+            width: 18px;
+            height: 18px;
+        }
+        .bm-cross-button{
+            right: 40px !important;
+        }
+        
+        /* Wrapper for item list */
+        .bm-item-list {
+            padding-top: 40px;
+            background-color:black;
+
+            .nav-link{
+                color: white;
+                border-bottom: 2px solid #707070;
+                margin: 10px 30px;
+                padding: 0.5rem 1rem;
+            }
+            
+            .nav-link.active{
+                border-bottom: 3px solid #FFC700;
+                color: white;
+            }
+
+            .join-link{
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                background-color: #FFC700;
+                border-radius: 24px;
+                color: black !important;
+                font-size: 16px;
+                margin-top:15px;  
+                padding: 10px 0px;
+                @extend .RobotoBold;
+        
+                .active{
+                    border-bottom: none;
+                }
+            }   
+        }
+    }

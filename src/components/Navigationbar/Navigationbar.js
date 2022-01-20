@@ -51,7 +51,7 @@ import "./Navigationbar.scss";
                               <img src={this.props.colorChange ? smallLogo : logo} alt="Logo" className="logo img-fluid" />
                       </Navbar.Brand>
                         <Nav className="mt-4">
-                              <NavbarLink navigateToSection={this.navigateToSection} className="d-flex"/>
+                              <NavbarLink navigateToSection={this.navigateToSection} className="d-flex align-items-center"/>
                         </Nav>
                     </Navbar.Collapse>
                 </div>
