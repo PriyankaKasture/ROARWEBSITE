@@ -33,8 +33,38 @@ previous=()=>{
     this.slider.slickPrev();
 }
 
-
     render() {
+
+      const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+        <button
+          {...props}
+          className={
+            "slick-prev slick-arrow" +
+            (currentSlide === 0 ? " slick-disabled" : "")
+          }
+          aria-hidden="true"
+          aria-disabled={currentSlide === 0 ? true : false}
+          type="button"
+        >
+          <img src={carousel_prev} width={'20px'} height={'20px'} alt='prev' />
+        </button>
+      );
+
+      const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+        <button
+          {...props}
+          className={
+            "slick-next slick-arrow" +
+            (currentSlide === slideCount - 1 ? " slick-disabled" : "")
+          }
+          aria-hidden="true"
+          aria-disabled={currentSlide === slideCount - 1 ? true : false}
+          type="button"
+        >
+          <img src={carousel_next} alt='next'  width={'20px'} height={'20px'} />
+        </button>
+      );
+      
         const innerSlider = {
             dots: true,
             infinite: false,
@@ -42,8 +72,8 @@ previous=()=>{
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
-            nextArrow:<img src={carousel_next} alt='next' />,
-            prevArrow:<img src={carousel_prev} alt='prev' />,
+            nextArrow:<SlickArrowRight/>,
+            prevArrow:<SlickArrowLeft/>,
             responsive: [
                 {
                   breakpoint: 600,

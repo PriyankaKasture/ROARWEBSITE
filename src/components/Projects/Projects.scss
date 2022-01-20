@@ -79,9 +79,6 @@
     }
 
        //Slider styles
-       .slick-slider{
-        //    width: 50%;
-       }
        .slick-next, .slick-prev{
            top: unset;
            bottom: 0px;
@@ -89,6 +86,12 @@
        }
        .slick-prev{
            left: 15px;
+       }
+       .slick-disabled{
+           opacity: 0.5;
+       }
+       .slick-prev:before , .slick-next:before{
+           content: '';
        }
        .slick-next{
            right: 15px;
