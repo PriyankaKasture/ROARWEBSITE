@@ -128,7 +128,7 @@ class Gallery extends React.Component {
 
      return ( 
         <Container className="gallery pt-3 pb-5">
-           <div className="count-arrow-box">
+           <div className="title-wrapper">
              <div className="title py-2">Gallery</div>
              <div className="count-box">
                 <SlideCountBox
@@ -136,6 +136,7 @@ class Gallery extends React.Component {
                       previous={this.previous}
                       next={this.next}
                       currentSlide={ this.state.currentSlide} 
+                      GalleryCount={GALLERY.DESKTOP}
                       totalSlides={this.state.totalSlides}/>
              </div>
           </div>
@@ -155,6 +156,7 @@ class Gallery extends React.Component {
               isMobileView={true}
               previous={this.previous}
               next={this.next}
+              GalleryCount={GALLERY.MOBILE}
               currentSlide={ this.state.currentSlide} 
               totalSlides={this.state.totalSlides}
                />    

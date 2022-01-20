@@ -3,28 +3,6 @@
 .navigationbar{
     position: relative;
 
-    .slide-container{
-        position: absolute;
-        bottom: 15%;
-        left: 47%;
-        width: 120px;
-    }
-    .rangeslider{
-        margin: 0;
-    }
-    .rangeslider .rangeslider__handle{
-        background: #FFC700;
-        border: 1px solid #FFC700;
-        width: 26px;
-        height: 26px;
-    }
-    .rangeslider-horizontal .rangeslider__handle:after{
-        content: none;
-    }
-    .rangeslider-horizontal .rangeslider__fill{
-        background:#FFFFFFBF;
-    }
-    
     .navbar-light .navbar-toggler-icon{
         background-image: url("../../resources/images/ic_menu.svg");
     }
@@ -121,7 +99,7 @@
                 color:black !important;
             }
         }
-
+        
         .bm-burger-bars {
             background: black !important;
         }
@@ -146,33 +124,6 @@
     .navbar-nav{
         align-items: center;
     }
-    .nav-link{
-        @extend .RobotoRegular16px;
-        color: #ffffff !important;
-        padding: 0px 12px;
-        cursor: pointer;
-        text-decoration: none;
-        margin: 0 22px;
-    }
-    .join-link{
-        display: flex;
-        align-items: center;
-        background-color: #FFC700;
-        border-radius: 17px;
-        height: 34px;
-        color: black !important;
-        @extend .RobotoBold;
-        font-size: 16px;
-        padding:0 15px;  
-
-        .active{
-            border-bottom: none;
-        }
-    }
-        .active {
-            border-bottom: 2px solid #ffac39;
-        }
-
         #language-selector{
             color: white;
             padding: 0 15px;
@@ -185,6 +136,10 @@
     }
     }
 }
+
+
+
+
 
 
 //Responsive
@@ -220,9 +175,6 @@
                 }
             }
         }
-        .slide-container{
-            left: 40%;
-        }
     }
 }
 
@@ -235,7 +187,5 @@
         }
     }
 }
-
-
 
   

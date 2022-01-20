@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { slide as Menu } from "react-burger-menu";
 import { Nav } from "react-bootstrap";
 
+
+// import NavbarLink from "../NavbarLink/NavbarLink";
+
+
 import {scrollToDiv} from "../../../utils/utility";
 import mobileLogo from "../../../resources/images/mobileLogo.jpg";
 
@@ -80,16 +84,6 @@ class MobileViewSidebar extends Component {
                     <div className='pt-2'>
                          <img src={mobileLogo} alt="Logo" className="d-lg-none mobile-logo img-fluid" />
                     </div>
-                    {/* <Dropdown className="language-wrapper mt-2">
-                                <Dropdown.Toggle variant="white" id="language-selector">
-                                      English
-                                      <i className="fa fa-angle-down"></i>
-                                </Dropdown.Toggle>
-
-                                <Dropdown.Menu>
-                                  <Dropdown.Item>Marathi</Dropdown.Item>
-                                </Dropdown.Menu>
-                    </Dropdown> */}
             </div>
         );
     }

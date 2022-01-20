@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import {Row ,Button ,Col} from "react-bootstrap";
+import {Row ,Col} from "react-bootstrap";
 import Slider from "react-slick";
+
+
+import SlideCountBox from "../CustomComponents/SlideCountBox/SlideCountBox";
+
 
 import carousel_next from "../../resources/images/ic_carousel_next.png";
 import carousel_prev from "../../resources/images/ic_carousel_previous.png"
-import next from "../../resources/images/next.svg";
-import back from "../../resources/images/back.svg";
 
 
 class Upcoming extends Component {
@@ -71,17 +73,14 @@ previous=()=>{
         return (
             <div>
                 <div className='mx-0 count-arrow-box'>
-                    <div className='slide-count px-3'>
-                        {this.state.currentSlide + '/' + this.props.totalSlidesCount}
-                    </div>
-                    <div className='d-flex'>
-                        <Button  disabled={this.state.currentSlide === 1} className="back-next-button" onClick={this.previous}>
-                            <img src={back} alt="back"/>
-                        </Button>
-                        <Button disabled={this.state.currentSlide === this.props.totalSlidesCount} className="back-next-button" onClick={this.next}>
-                            <img src={next} alt="next"/>
-                        </Button>
-                    </div>
+                    <SlideCountBox
+                        isMobileView={false} 
+                        previous={this.previous}
+                        next={this.next}
+                        GalleryCount={1}
+                        isProjectSlider={true}
+                        currentSlide={ this.state.currentSlide} 
+                        totalSlides={this.props.totalSlidesCount}/>
                 </div>
               <Slider  
               ref={d => (this.slider = d)} 
@@ -112,18 +111,15 @@ previous=()=>{
                 })} 
               </Slider>
 
-              <div className='mx-0 mt-2 mobile-count-arrow-box'>
-                    <div className='slide-count px-3'>
-                        {this.state.currentSlide + '/' + this.props.totalSlidesCount}
-                    </div>
-                    <div className='d-flex'>
-                        <Button  disabled={this.state.currentSlide === 1} className="back-next-button" onClick={this.previous}>
-                            <img src={back} alt="back"/>
-                        </Button>
-                        <Button disabled={this.state.currentSlide === this.props.totalSlidesCount} className="back-next-button" onClick={this.next}>
-                            <img src={next} alt="next"/>
-                        </Button>
-                    </div>
+                <div className='mx-0 mt-2 mobile-count-arrow-box'>
+                    <SlideCountBox
+                            isMobileView={false} 
+                            previous={this.previous}
+                            next={this.next}
+                            GalleryCount={1}
+                            isProjectSlider={true}
+                            currentSlide={ this.state.currentSlide} 
+                            totalSlides={this.props.totalSlidesCount}/>    
                 </div>
             </div>
         );

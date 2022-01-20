@@ -1,0 +1,31 @@
+@import "../../../resources/styles/fonts.scss";
+
+
+.navbar-link-wrapper{
+    .nav-link{
+        @extend .RobotoRegular16px;
+        color: #ffffff !important;
+        padding: 0px 12px;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 0 22px;
+    }
+    .join-link{
+        display: flex;
+        align-items: center;
+        background-color: #FFC700;
+        border-radius: 17px;
+        height: 34px;
+        color: black !important;
+        @extend .RobotoBold;
+        font-size: 16px;
+        padding:0 15px;  
+
+        .active{
+            border-bottom: none;
+        }
+    }
+        .active {
+            border-bottom: 2px solid #ffac39;
+        }
+}

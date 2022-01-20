@@ -1,0 +1,31 @@
+
+@import "../../../resources/styles/fonts.scss";
+
+.slide-count-box{
+
+    .next-prev{
+        padding: 0 5px;   
+        text-decoration: none;
+    }
+
+    .next-prev.btn:disabled{
+        opacity: 40%;
+    }
+
+   .next-prev:focus{
+        box-shadow: none;
+   }
+
+   .slide-count{
+        @extend .PoppinsSemiBold;
+        font-size: 1.3vw;
+    }
+    
+    .view-more{
+        @extend .PoppinsSemiBold;
+        font-size:20px;
+        color: #FFC700;
+        text-decoration: none;
+        padding: 0 10px;
+    }
+}

@@ -12,7 +12,7 @@
         color: white;
     }
 
-        .count-arrow-box{
+        .title-wrapper{
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -42,28 +42,4 @@
         .slick-dots li button:before{
             font-size: 0px;
         }
-
-       .gallery-button{
-           padding: 0 5px;   
-           text-decoration: none;
-       }
-       .gallery-button.btn:disabled{
-            opacity: 40%;
-        }
-
-       .gallery-button:focus{
-            box-shadow: none;
-       }
-       .slide-count{
-           @extend .PoppinsSemiBold;
-           font-size: 1.3vw;
-       }
-
-       .view-more{
-           @extend .PoppinsSemiBold;
-           font-size:20px;
-           color: #FFC700;
-           text-decoration: none;
-           padding: 0 10px;
-       }
 }
