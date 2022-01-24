@@ -15,39 +15,22 @@ import "./Navigationbar.scss";
 
  class Navigationbar extends React.Component {
 
-  constructor() {
-    super()
-    this.state = {
-      value: 0,
-    }
-  }
-
-  componentDidMount(){
-    this.moveSlider(this.state.value);
-  }
-  
   navigateToSection = (event) => {
     event.preventDefault();
     scrollToDiv(event);
   };
 
-  moveSlider=(value)=>{
-      this.setState({
-        value:value
-      });
-  }
-
    render () { 
      return ( 
         <div className="navigationbar">
           <Navbar className="w-100" collapseOnSelect expand="lg" bg="dark">
-          <div id="garbage-image" className="img-fluid" style={{'--clip-percentage':this.state.value + 'vw'}}></div>
+            <div id="garbage-image" className="img-fluid"></div>
 
             <div className={this.props.colorChange ? 'navbar-container colorChange' : 'navbar-container'}>
                  <MobileViewSidebar/>
 
                   <Navbar.Collapse id="responsive-navbar-nav">
-                      <Navbar.Brand className="desktop-logo" href="#home">
+                      <Navbar.Brand className="desktop-logo">
                               <img src={this.props.colorChange ? smallLogo : logo} alt="Logo" className="logo img-fluid" />
                       </Navbar.Brand>
                         <Nav className="mt-4">
